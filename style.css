@@ -1,6 +1,8 @@
 body {
-  background-color: black;
+  background-image: url(BACKGROUND.png);
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -42,7 +44,7 @@ header {
   top: 15px;
 }
 
-h1 {
+#upgrade-experience {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: relative;
@@ -50,9 +52,19 @@ h1 {
   left: 175px;
 }
 
+#enjoy-more {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 250px;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+}
+
 #premium {
   display: flex;
-  background-color: rgb(255, 183, 0);
+  background-color: goldenrod;
   font-weight: bold;
   position: relative;
   left: 175px;
@@ -78,8 +90,39 @@ h2 {
   height: 30px;
 }
 
-h1,
+#upgrade-experience,
 #premium,
-h2 {
+#enjoy-more h2 {
   z-index: 1;
+}
+
+#compare-plans {
+  display: flex;
+  background-color: black;
+  border: transparent;
+  color: chocolate;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  left: 170px;
+  top: 100px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#compare-plans2 {
+  display: flex;
+  text-align: center;
+  background-color: black;
+  border: transparent;
+  color: chocolate;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  left: 45%;
+  top: 225px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
 }
