@@ -1,49 +1,85 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
 }
 
-#login {
-  background: transparent;
-  border: none;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#log-in,
+#explore,
+#logo {
+  cursor: pointer;
 }
 
-#explorar {
-  background: transparent;
-  border: 1px solid #ffffff;
-  color: white;
+#log-in,
+#explore {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 25px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  right: 100px;
+  top: 5px;
+}
+
+#log-in {
+  background-color: black;
+  border: 2px solid black;
+  right: 120px;
+}
+
+#explore {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+#logo {
+  position: relative;
+  left: 90px;
+  top: 15px;
 }
 
 h1 {
   color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: relative;
-  top: 225px;
-  left: 125px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  top: 100px;
+  left: 175px;
+}
+
+#premium {
+  display: flex;
+  background-color: rgb(255, 183, 0);
+  font-weight: bold;
+  position: relative;
+  left: 175px;
+  top: 95px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  border: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+  position: relative;
+  top: 100px;
+  left: 175px;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+#crown {
+  display: flex;
+  height: 30px;
+}
+
+h1,
+#premium,
+h2 {
   z-index: 1;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-body {
-  background-color: black;
-}
-
-.background-image img {
-  height: 600px;
-  position: relative;
-  left: 350px;
-  z-index: 0;
-  bottom: 100px;
-}
-
-#premium-button button {
-    z-index: 2;
-    background-color: yellow;
-    position: absolute;
-    top: 380px;
-    left: 135px;
 }
